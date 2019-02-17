@@ -1,0 +1,33 @@
+
+.skoda-takki {
+    margin-bottom: 1rem;
+a {
+        @include media-breakpoint-up(md) { 
+            width: 7rem;
+        }
+    }       
+} 
+.email {
+    min-width:150px;
+    min-height: 60px;
+    & img {
+        width: 30px;
+    }
+}
+.icons {
+    height: 30px; 
+    width: 100px;
+}
+.icon-img {
+    max-height: 24px;
+    color: $primary-color;
+    max-width: 30px;
+}
+.dropdown-menu a:hover{
+    color: white;
+    background-color:#007bff;
+}
+.text-center {
+    cursor: pointer;
+}
+

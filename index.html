@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header mx-auto">
+            <div class="d-flex d-block justify-content-between align-items-center mx-auto mt-3 header-nav">
+                <div>
+                    <div class="breadcrumb mt-3 ml-3">Til Leigu</div>
+                </div>
+                <div>
+                    <a href="#" class="logo"><img src="img/visir-logo.png" alt="homescreen"></a>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                        <li><a href="#"><img src="img/house.svg"></a></li>
+                        <li><a href="#"><img src="img/warehouse.svg"></a></li>
+                        <li><a href="#"><img src="img/office-table (1).svg"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+            <!------------------------
+                    Carousel 
+            ------------------------->
+        <div id="carouselExampleControls" class="carousel slide hringekja" data-interval="6000"data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/asakor.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-primary opacity-lvl">
+                        <h5>Ásakór 203 Kóp</h5>
+                        <p>240.000kr</p>
+                    </div>
+                </div>
+            
+                <div class="carousel-item">
+                    <img src="img/grundarstigur.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption bg-primary opacity-lvl">
+                        <h5>Grundarstígur 101 rvk</h5>
+                        <p>315.000kr</p>
+                    </div>
+                </div>                    
+                <div class="carousel-item">
+                    <img src="img/ferjubakki.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption bg-primary opacity-lvl">
+                        <h5>Ferjubakki 24, 109 rvk</h5>
+                        <p>275.000kr</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--------------------------------------
+                    auglýsingar - cards
+        ---------------------------------------->
+        <main>
+            <div class="container">
+                <ul class="d-flex justify-content-between pt-2  mt-2 mx-auto head-options" style="padding: 0 57px;">
+                    <li class="d-flex align-items-center">
+                        <h4 class="mr-1">Raða eftir:</h4>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nýjast efst
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Verð: Ódýrast</a>
+                                <a class="dropdown-item" href="#">Verð: Dýrast</a>
+                                <a class="dropdown-item" href="#">Stærð: Minnst </a>
+                                <a class="dropdown-item" href="#">Stærð: Stærst </a>
+                            </div>
+                        </div>
+                        <li class="val-takkar">
+                        <img src="img/grid.png" class="align-middle px-2">
+                        <img src="img/list.png"class="align-middle">
+                    </li>              
+                </ul>
+            </div>
+       
+            <div class="shadow p-2 mb-5 bg-white rounded d-flex justify-content-center align-bottom">
+                <button type="button" class="btn btn-block bg-primary text-white search-button">Leita</button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!--  card 1 -------------------------------------------------------------------->
+                    <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">330.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/tangabryggja.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Tangabryggja 15, <span>110 rvk</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">111.3fm <span style="color:blue">|</span>4 herb.<span style="color:blue">|</span>Þvottahús<span style="color:blue">|</span>Bílageymsla </p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                     <!--  card 2 -------------------------------------------------------------------->
+                    <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">290.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 15.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/asakor.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Ásakór 15, <span>203 Kóp</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">89.7fm <span style="color:blue">|</span>3 herb.<span style="color:blue">|</span>Þvottahús<span style="color:blue">|</span>Bílageymsla </p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                     <!--  card 3 -------------------------------------------------------------------->
+                     <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">280.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/bardastadir.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Barðastaðir 10, <span>112 rvk</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">111.3fm <span style="color:blue">|</span>3herb.<span style="color:blue">|</span>Jarðhæð<span style="color:blue">|</span>Garður</p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                        <!--  card 4 -------------------------------------------------------------------->
+                     <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">275.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/ferjubakki.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Ferjubakki 12, <span>109 rvk</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">74fm <span style="color:blue">|</span>3 herb.<span style="color:blue">|</span>Þvottahús<span style="color:blue">|</span>Bílastæði</p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                     </div>
+                        <!--  card 5 -------------------------------------------------------------------->
+                     <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">269.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/tungubakki.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Tungubakki 16, <span>109 rvk</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">79fm <span style="color:blue">|</span>2 herb.<span style="color:blue">|</span>Dýrahald leyft<span style="color:blue">|</span>Baðkar</p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                        <!--  card 6 -------------------------------------------------------------------->
+                     <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">310.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/ljosavik.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Ljósavík 36, <span>112 rvk</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">82fm <span style="color:blue">|</span>3 herb.<span style="color:blue">|</span>Garður<span style="color:blue">|</span>Bílastæði</p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                        <!--  card 7 -------------------------------------------------------------------->
+                     <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">290.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/grundarstigur.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Grundarstígur 7, <span>101 rvk</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">68.3fm <span style="color:blue">|</span>3 herb.<span style="color:blue">|</span>Útsýni<span style="color:blue">|</span>Miðær</p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                        <!--  card 8 -------------------------------------------------------------------->
+                     <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">190.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/safamyri.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Safamýri 48, <span>104 rvk</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">54.8fm <span style="color:blue">|</span>2 herb.<span style="color:blue">|</span>Bílastæði<span style="color:blue">|</span>Svalir</p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                        <!--  card 9 -------------------------------------------------------------------->
+                     <div class=" col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-5 border-0 shadow mb-5 bg-white rounded">
+                            <div class="card-body p-0">
+                                <div class="text-center" data-toggle="modal" data-target="#exampleModalCenter" > 
+                                    <h3 class="pt-2 pb-1 mx-auto text-primary">210.000kr p/mán</h3>
+                                    <p class="mx-auto">Laus 1.mars '19</p>
+                                    <div class="border-bottom border-primary my-2"></div>
+                                    <img class="card-img-top" src="img/thver.jpg" alt="íbúðarhúsnæði til leigu, tangabryggja">
+                                    <div class="p-3">
+                                        <h4 class="card-title font-weight-bold mx-auto text-center">Þverbrekka 5, <span>200 Kóp</span></h4>
+                                        <div class="border-bottom border-primary w-100 my-3" ></div>
+                                        <p class="card-text text-center">112fm <span style="color:blue">|</span>5 herb.<span style="color:blue">|</span>Útsýni<span style="color:blue">|</span>Þvottahús</p>
+                                        <a href="#" class="d-md-none btn btn-primary mt-4 btn-block skoda-takki">
+                                            SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="d-none d-md-flex justify-content-between p-3 skoda-takki">
+                                    <div class="icons d-flex">
+                                        <img src="img/faucet.svg"class="icon-img">
+                                        <img src="img/flash.svg"class="icon-img"> 
+                                        <img src="img/no-animals.svg"class="icon-img"> 
+                                        <img src="img/washing-machine.svg"class="icon-img"> 
+                                        <img src="img/refrigerator.svg"class="icon-img">  
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-block">
+                                        SKOÐA <img src="img/visir-arrow.svg" class="pl-2 align-middle">
+                                    </a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <!--------------------------------------
+                             MODAL
+                    ---------------------------------------->
+           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex flex-column mx-auto">
+                            <div class="d-flex justify-content-around modal-haus">
+                                <h3 class="modal-title" id="exampleModalCenterTitle">Tangabryggja 15</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <h5><span style="color:blue;">|</span>290.000kr pr/mán</h5>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <img src="img/tangabryggja.jpg"class="w-100">
+                            <div class="text-center py-3">
+                                <img src="img/tanga-1.jpg" style="width: 6rem;">
+                                <img src="img/tanga-2.jpg" style="width: 6rem;">
+                                <img src="img/tanga-3.jpg" style="width: 6rem;">
+                                <img src="img/tanga-4.jpg" style="width: 6rem;">
+                            </div>
+                            <div class="border-bottom border-primary w-100 my-3" ></div>
+                            <div class= " py-2">
+                                <p class="text-center">111.3fm <span style="color:blue">|</span>3svefnh.<span style="color:blue">|</span>Þvottahús<span style="color:blue">|</span>Bílageymsla </p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <p>Hiti og rafmagn innifalið í verði</p>
+                                    <p>Ísskápur fylgir</p>
+                                    <p>Dýrahald ekki leyft</p>
+                                </div>
+                            </div>            
+                        </div>
+                        <div class="modal-footer d-flex">
+                            <div class="mx-auto">
+                                <a href="mailto:safamyri@email.com" target="_blank" class="btn btn-primary email "><img src="img/email.svg"><p>Hafa samband</p></a>
+                            </div>
+                            <div class="mt-2">
+                                <a class="btn btn-primary p2" href="#" role="button">Skoða betur<img src="img/visir-arrow.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a class="back-to-top d-block  d-flex justify-content-center align-items-center  " href="#">Förum upp, upp, upp!</a>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>  
+    </body>
+</html>

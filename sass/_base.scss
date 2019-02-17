@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: $main-font;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.opacity-lvl {
+    opacity: 0.5;
+    width: 10rem;
+
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 { 
+    font-size: 1.1rem;
+}
+
+.hringekja {
+    max-width: 999px;
+    margin: 0 auto;
+}
+.modal-haus {
+    min-width: 350px;
+}
+.search-button {
+    max-width: 350px;
+}
+
